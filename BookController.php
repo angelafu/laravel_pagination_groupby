@@ -14,6 +14,7 @@ class BookController extends Controller
 			')
 		)
 	->groupBy('purchases.book_id');
+	
 
 	/*
 	combine the purchase information with the information of the book, including two parts:
@@ -33,6 +34,13 @@ class BookController extends Controller
 		'sub_set.*',
 		'books.*'
 	);
+	/*
+	select clause indicate which fields are chosed. 
+	It is very important and necessory, because you could have a ambigous error if you use the fields inclued in more than two tables,
+	for example id, created_at and updated_at.
+	Therefore using select clause specifying the fields will avoid the error in the future.
+	*/
+	
 
 	/*
 	combine the purchase and book informaion with category information, which is alse composed of two parts:
