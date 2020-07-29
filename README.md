@@ -102,17 +102,22 @@ class BookController extends Controller
 }
 
 3. view
-<table>
-    @foreach($subsetWithBookCategory as $item)
-    <tr>
-        <td>{{$item.ISBN}}</td>
-        <td>
-            <a href="book_purchases/{{item->id}}">
-                {{$item.book_name}}
-            </a>
-        </td>
-        <td>{{$item.category_name}}</td>
-        <td>{{$item.latest_purchase_date}}</td>
-    </tr>
-    @endforeach
-</table>
+<html>
+	<head></head>
+<body>
+	<table>
+	    @foreach($subsetWithBookCategory as $item)
+	    <tr>
+		<td>{{$item.ISBN}}</td>
+		<td>
+		    <a href="book_purchases/{{item->id}}">
+			{{$item.book_name}}
+		    </a>
+		</td>
+		<td>{{$item.category_name}}</td>
+		<td>{{$item.latest_purchase_date}}</td>
+	    </tr>
+	    @endforeach
+	</table>
+</body>
+</html>
