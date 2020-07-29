@@ -18,5 +18,6 @@
     </tr>
     @endforeach
 </table>
+<div>{{ $subsetWithBookCategory->links() }}</div>
 </body>
 </html>
