@@ -20,26 +20,13 @@ The relationship between books and purchases is one too many. Which means one bo
 
 III. Solution:
 1. Tables<br>
-Table one: categories<br>
-	id(PK)
-	category_name
-	created_at
-	updated_at
+Table 1: categories<br>
+id(PK), category_name, created_at, updated_at<br>
+Table 2: books<br>
+id(PK), ISBN, book_name, created_at ,updated_at, category_id(FK), 
 <br>
-Table two: books<br>
-	id(PK)
-	ISBN
-	book_name
-	category_id(FK)
-	created_at
-	updated_at
-<br>
-Table three: purchases<br>
-	id(PK)
-	created_at
-	book_id(FK)
-	created_at
-	updated_at
+Table 3: purchases<br>
+id(PK), created_at, updated_at, book_id(FK), 
 
 2. Controller:BookController 
 
