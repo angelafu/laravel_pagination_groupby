@@ -1,6 +1,5 @@
 # laravel_pagination_groupby
 Laravel: use query builder method 'joinSub' to solve the problem that pagination cannot include SQL 'groupBy' clause.
-Laravel: use query builder method 'joinSub' to solve the problem that pagination cannot include SQL 'groupBy' clause.
 
 I. Requirement:
 1. List the books purchased.
@@ -27,6 +26,6 @@ id(PK), ISBN, book_name, created_at ,updated_at, category_id(FK)<br>
 Table 3: purchases<br>
 id(PK), created_at, updated_at, book_id(FK)
 
-2. Controller:BookController 
+2. Controller:BookController.php
 
-3. view: book_list.blade.php
+3. View: book_list.blade.php
