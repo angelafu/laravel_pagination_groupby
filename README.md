@@ -23,10 +23,9 @@ III. Solution:
 Table 1: categories<br>
 id(PK), category_name, created_at, updated_at<br>
 Table 2: books<br>
-id(PK), ISBN, book_name, created_at ,updated_at, category_id(FK), 
-<br>
+id(PK), ISBN, book_name, created_at ,updated_at, category_id(FK)<br>
 Table 3: purchases<br>
-id(PK), created_at, updated_at, book_id(FK), 
+id(PK), created_at, updated_at, book_id(FK)
 
 2. Controller:BookController 
 
