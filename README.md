@@ -14,12 +14,12 @@ The relationship between books and purchases is one too many. Which means one bo
 <br>Book C is purchased by 3 people on 1/7/2020, 2/7/2020, 4/7/2020. The latest date is 4/7/2020.
 <br>The ideal result should be:
 <br>book_name latest_purchase_date
-C 4/7/2020
-A 3/7/2020
-B 2/7/2020
+<br>C 4/7/2020
+<br>A 3/7/2020
+<br>B 2/7/2020
 
 III. Solution:
-1. Tables
+1. Tables<br>
 Table one: categories<br>
 	id(PK)
 	category_name
